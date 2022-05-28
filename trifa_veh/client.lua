@@ -146,7 +146,11 @@ function epicerie()
 end
 
 RegisterCommand(Config.commande, function()
-    epicerie()
+    if IsPedSittingInAnyVehicle(PlayerPedId()) then
+        epicerie()
+    else
+        ESX.ShowNotification("Vous devez être dans un véhicule")
+    end
 end)
 
 
