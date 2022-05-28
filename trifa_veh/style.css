@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@1,700&family=Source+Sans+Pro:ital@1&display=swap');
+
+@font-face {
+    font-family: 'font-1';
+    src: url();
+}
+
+
+
+
+
+/* h1 */
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow:#86fbff 2px -1px 20px 7px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+/* main */
+
+main {
+    background: rgb(87 133 131 / 96%);
+    width: 500px;
+    min-height: 50px;
+    margin: 200px 200px 200px 200px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgb(101 124 129) 2px -1px 20px 7px;
+}
+.postioning,
+.flexbx,
+.grid {
+    border: 2px solid #ffffff2e;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+/* positioning */
+
+.postioning {
+
+    position: relative;
+}
+
+h2 {
+    margin : 0;
+}
+
+
+/* felxbox */
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.de {
+    list-style-type: none;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    background: rgb(128 151 157 / 61%);
+    border-radius : 10px;
+    /* centrer vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1000px) {
+
+    .grid-container {
+        display: block;
+    }
+}
+    
+@media screen and (max-width: 690px) {
+    form {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'i1 '
+        'i2'
+        'ta'
+        'bt';
+    }
+}
+    
+
+
+
+.delivery-icon{
+    font-size: 25px;
+    color: rgb(220 245 244);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+
+
+.section-title {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.fe{
+
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
+
+.de {
+    list-style-type: none;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    background: rgb(128 151 157 / 61%);
+    border-radius : 10px;
+    /* centrer vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+.de:hover{
+    background: rgba(255, 255, 255, 0.61);
+    transition: 0.6s;
+}
+
